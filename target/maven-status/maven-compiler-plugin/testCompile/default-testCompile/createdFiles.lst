@@ -1,0 +1,9 @@
+Testing\Tests\ValidDataToRegister.class
+Testing\Data\DataReader$1.class
+Testing\Tests\ValidateThatUserCanMakeOrder.class
+Testing\Data\DataReader.class
+Testing\TestComponent\Retry.class
+Testing\Tests\InvalidOrder.class
+Testing\TestComponent\Listeners.class
+Testing\Tests\InvalidLogin.class
+Testing\TestComponent\BaseTest.class

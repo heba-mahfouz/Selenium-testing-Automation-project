@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="1" ignored="0" total="6" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-11T05:24:59 EEST" name="All Test Suite" finished-at="2025-05-11T05:25:51 EEST" duration-ms="52187">
+    <groups>
+      <group name="ErrorHandling">
+        <method signature="InvalidLogin.loginErrorValidation()[pri:0, instance:Testing.Tests.InvalidLogin@331acdad]" name="loginErrorValidation" class="Testing.Tests.InvalidLogin"/>
+      </group> <!-- ErrorHandling -->
+      <group name="Purchase">
+        <method signature="ValidateThatUserCanMakeOrder.submitOrder(java.util.HashMap)[pri:0, instance:Testing.Tests.ValidateThatUserCanMakeOrder@4ed5eb72]" name="submitOrder" class="Testing.Tests.ValidateThatUserCanMakeOrder"/>
+      </group> <!-- Purchase -->
+    </groups>
+    <test started-at="2025-05-11T05:24:59 EEST" name="ValidDataToRegister" finished-at="2025-05-11T05:25:22 EEST" duration-ms="22872">
+      <class name="Testing.Tests.ValidDataToRegister">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Testing.Tests.ValidDataToRegister@324a0017]" started-at="2025-05-11T05:24:59 EEST" name="launchApplication" finished-at="2025-05-11T05:25:13 EEST" duration-ms="13818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="TestValidData()[pri:0, instance:Testing.Tests.ValidDataToRegister@324a0017]" started-at="2025-05-11T05:25:13 EEST" name="TestValidData" finished-at="2025-05-11T05:25:21 EEST" duration-ms="7875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestValidData -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Testing.Tests.ValidDataToRegister@324a0017]" started-at="2025-05-11T05:25:21 EEST" name="close" finished-at="2025-05-11T05:25:22 EEST" duration-ms="634" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Testing.Tests.ValidDataToRegister -->
+    </test> <!-- ValidDataToRegister -->
+    <test started-at="2025-05-11T05:24:59 EEST" name="InvalidOrder" finished-at="2025-05-11T05:25:34 EEST" duration-ms="34986">
+      <class name="Testing.Tests.InvalidOrder">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Testing.Tests.InvalidOrder@6aa3a905]" started-at="2025-05-11T05:24:59 EEST" name="launchApplication" finished-at="2025-05-11T05:25:15 EEST" duration-ms="15466" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="productErrorValidation()[pri:0, instance:Testing.Tests.InvalidOrder@6aa3a905]" started-at="2025-05-11T05:25:15 EEST" name="productErrorValidation" finished-at="2025-05-11T05:25:34 EEST" duration-ms="18875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productErrorValidation -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Testing.Tests.InvalidOrder@6aa3a905]" started-at="2025-05-11T05:25:34 EEST" name="close" finished-at="2025-05-11T05:25:34 EEST" duration-ms="495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Testing.Tests.InvalidOrder -->
+    </test> <!-- InvalidOrder -->
+    <test started-at="2025-05-11T05:24:59 EEST" name="InvalidLogin" finished-at="2025-05-11T05:25:35 EEST" duration-ms="35355">
+      <class name="Testing.Tests.InvalidLogin">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Testing.Tests.InvalidLogin@331acdad]" started-at="2025-05-11T05:24:59 EEST" name="launchApplication" finished-at="2025-05-11T05:25:16 EEST" duration-ms="16733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method retried="true" signature="loginErrorValidation()[pri:0, instance:Testing.Tests.InvalidLogin@331acdad]" started-at="2025-05-11T05:25:16 EEST" name="loginErrorValidation" finished-at="2025-05-11T05:25:20 EEST" duration-ms="4336" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Login was unsuccessful. ease correct the errors and try again.] but found [Login was unsuccessful. Please correct the errors and try again.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Login was unsuccessful. ease correct the errors and try again.] but found [Login was unsuccessful. Please correct the errors and try again.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at Testing.Tests.InvalidLogin.loginErrorValidation(InvalidLogin.java:14)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorValidation -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Testing.Tests.InvalidLogin@331acdad]" started-at="2025-05-11T05:25:20 EEST" name="close" finished-at="2025-05-11T05:25:22 EEST" duration-ms="1335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Testing.Tests.InvalidLogin@331acdad]" started-at="2025-05-11T05:25:22 EEST" name="launchApplication" finished-at="2025-05-11T05:25:26 EEST" duration-ms="4631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginErrorValidation()[pri:0, instance:Testing.Tests.InvalidLogin@331acdad]" started-at="2025-05-11T05:25:26 EEST" name="loginErrorValidation" finished-at="2025-05-11T05:25:34 EEST" duration-ms="7549" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Login was unsuccessful. ease correct the errors and try again.] but found [Login was unsuccessful. Please correct the errors and try again.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Login was unsuccessful. ease correct the errors and try again.] but found [Login was unsuccessful. Please correct the errors and try again.]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at Testing.Tests.InvalidLogin.loginErrorValidation(InvalidLogin.java:14)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorValidation -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Testing.Tests.InvalidLogin@331acdad]" started-at="2025-05-11T05:25:34 EEST" name="close" finished-at="2025-05-11T05:25:34 EEST" duration-ms="314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Testing.Tests.InvalidLogin -->
+    </test> <!-- InvalidLogin -->
+    <test started-at="2025-05-11T05:24:59 EEST" name="SubmitOrderTest" finished-at="2025-05-11T05:25:51 EEST" duration-ms="52187">
+      <class name="Testing.Tests.ValidateThatUserCanMakeOrder">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Testing.Tests.ValidateThatUserCanMakeOrder@4ed5eb72]" started-at="2025-05-11T05:25:00 EEST" name="launchApplication" finished-at="2025-05-11T05:25:15 EEST" duration-ms="14935" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:Testing.Tests.ValidateThatUserCanMakeOrder@4ed5eb72]" started-at="2025-05-11T05:25:15 EEST" name="submitOrder" data-provider="getData" finished-at="2025-05-11T05:25:42 EEST" duration-ms="26928" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=1234567, email=mahfouz123@gmail.com, productName=Build your own cheap computer}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Testing.Tests.ValidateThatUserCanMakeOrder@4ed5eb72]" started-at="2025-05-11T05:25:42 EEST" name="close" finished-at="2025-05-11T05:25:42 EEST" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:Testing.Tests.ValidateThatUserCanMakeOrder@4ed5eb72]" started-at="2025-05-11T05:25:42 EEST" name="launchApplication" finished-at="2025-05-11T05:25:46 EEST" duration-ms="3775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="orderHistoryTest()[pri:0, instance:Testing.Tests.ValidateThatUserCanMakeOrder@4ed5eb72]" started-at="2025-05-11T05:25:46 EEST" name="orderHistoryTest" finished-at="2025-05-11T05:25:51 EEST" depends-on-methods="Testing.Tests.ValidateThatUserCanMakeOrder.submitOrder" duration-ms="4975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderHistoryTest -->
+        <test-method is-config="true" signature="close()[pri:0, instance:Testing.Tests.ValidateThatUserCanMakeOrder@4ed5eb72]" started-at="2025-05-11T05:25:51 EEST" name="close" finished-at="2025-05-11T05:25:51 EEST" duration-ms="158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- Testing.Tests.ValidateThatUserCanMakeOrder -->
+    </test> <!-- SubmitOrderTest -->
+  </suite> <!-- All Test Suite -->
+</testng-results>

@@ -1,0 +1,8 @@
+Pages\OrderPage.class
+Resourses\ExtentReporterNG.class
+Pages\ProductCatalogue.class
+Pages\RegisterPage.class
+Pages\CartPage.class
+Pages\LoginPage.class
+Pages\BasePage.class
+Pages\CheckOutPage.class
